@@ -9,12 +9,41 @@
   <body></body>
 </html>
 
-<script>
+<!-- <script>
   function 삼육구게임(x) {
     if (x % 3 == 0) {
       alert("박수");
     }
+    if (x % 3 != 0) {
+      alert("통과");
+    }
   }
 
   // %는 나머지를 알려준다 parint()는 몫을 알려줌
+</script> -->
+
+<script>
+  function 삼육구게임(x) {
+    if (x % 9 == 0) {
+      alert("박수x2");
+    } else if (x % 3 == 0) {
+      alert("박수");
+    } else {
+      alert("통과");
+    }
+  }
+</script>
+
+<script>
+  // 1과목당 100점만점 , 두과목 합쳐서 120점 이상이면 합격
+  // 한과목에 40점 미만 발생시 탈락
+  function 합격했냐(x, y) {
+    if (x > 100 || y > 100 || isNaN("x, y")) {
+      alert("장난치지마라");
+    } else if (x + y > 120 && x >= 40 && y >= 40) {
+      console.log("합격");
+    } else {
+      console.log("불합격");
+    }
+  }
 </script>
